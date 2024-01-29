@@ -6,6 +6,7 @@ from torchvision import transforms
 from io import BytesIO
 import numpy as np
 from model import Muffler,UNet
+import cv2
 
 def page1():
     st.title("Коррекция шумов изображения с помощью автоинкодера")
