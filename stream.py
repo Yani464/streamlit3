@@ -14,7 +14,7 @@ def page1():
 
     def load_model_auto():
         loaded_model = Muffler()
-        loaded_model.load_state_dict(torch.load('autoencoder_model.pth'))
+        loaded_model.load_state_dict(torch.load('autoencoder_model.pth',map_location=torch.device('cpu')))
         loaded_model.eval()
         return loaded_model
 
